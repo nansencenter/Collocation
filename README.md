@@ -1,12 +1,16 @@
 Collocation
 ===========
 
-An illustration of regression applied to meteorology and oceanography, where one
-dataset might be a collection of isolated samples and another is an estimate with
-good coverage in space and/or time.  Naturally, errors exist in both data sources
-(cf. https://en.wikipedia.org/wiki/Errors-in-variables_models).  Synergy requires
-that the (affine) relationship between the two is quantified, although no other
-restriction concerning functional dependence of such a relationship is necessary
-(this might be limited only by the number of samples and imagination).  The focus
-is on a retrieval of regression slope because all kinds of metrics of interest
-can then be obtained. 
+Errors are not necessarily independent in meteorological and oceanographic datasets.
+The collocation method successfully accommodates errors in all variables of interest
+(cf. https://en.wikipedia.org/wiki/Errors-in-variables_models) and is starting to
+consider error dependence, but more modelling is needed.  This includes consideration
+of, in particular, a collection of isolated samples and a much larger collection with
+excellent coverage in space and/or time.  Corresponding errors are typically not
+independent, unfortunately, but given appropriate error models, relationships between
+variables can be quantified without any restriction on the functional dependence of
+such relationships (i.e., exploration can be guided by geophysical wisdom, but apart
+from the error model itself, the only real limitation is probably number of available
+collocations).  In any case, it is convenient when casting or filtering data through
+an error model to focus retrievals on regression slope (for an affine model) and the
+correspoding signal and noise, as all kinds of metrics can then be derived.
