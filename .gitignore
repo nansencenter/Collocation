@@ -38,3 +38,4 @@ limbo/
 *.jl.cov
 *.jl.*.cov
 *.jl.mem
+*.jl.old
